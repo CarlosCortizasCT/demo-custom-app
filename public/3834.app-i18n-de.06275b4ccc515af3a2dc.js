@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcarlos_17062022=self.webpackChunkcarlos_17062022||[]).push([[3834],{"./src/i18n/data/de.json":s=>{s.exports={}}}]);
