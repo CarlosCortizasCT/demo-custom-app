@@ -9,6 +9,7 @@ import Text from '@commercetools-uikit/text';
 import messages from './messages';
 import styles from './welcome.mod.css';
 import WebDeveloperSvg from './web-developer.svg';
+import { useApplicationContext } from '@commercetools-frontend/application-shell-connectors';
 
 const WrapWith = (props) =>
   props.condition ? props.wrapper(props.children) : props.children;
@@ -65,11 +66,17 @@ InfoCard.propTypes = {
 const Welcome = () => {
   const match = useRouteMatch();
   const intl = useIntl();
+  const appContext = useApplicationContext(context => context);
+  console.log({ appContext });
+  const language = useApplicationContext(context => context.dataLocale);
 
   return (
     <Constraints.Horizontal max={16}>
       <Spacings.Stack scale="xl">
         <Text.Headline as="h1" intlMessage={messages.title} />
+        <Text.Subheadline as="h4">
+          Selected language: {language}
+        </Text.Subheadline>
         <div>
           <div className={styles.imageContainer}>
             <img

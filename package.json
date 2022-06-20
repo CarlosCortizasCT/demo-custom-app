@@ -17,7 +17,7 @@
     "format": "prettier --write '**/*.js'",
     "versions:appkit": "manypkg upgrade @commercetools-frontend",
     "versions:uikit": "manypkg upgrade @commercetools-uikit",
-    "deploy": "yarn build && cp public/index.html public/200.html && surge public https://carlos-17062022.surge.sh",
+    "deploy": "yarn build && cp public/index.html public/200.html && cp ./netlify.toml public/netlify.toml && surge public https://carlos-17062022.surge.sh",
     "config:sync": "mc-scripts config:sync",
     "mc-login": "mc-scripts login"
   },

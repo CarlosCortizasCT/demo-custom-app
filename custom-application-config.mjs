@@ -14,7 +14,7 @@ const config = {
 
     production: {
       applicationId: 'cl4idu0sm118557601qbyjpb1uqv',
-      url: 'https://carlos-17062022.surge.sh',
+      url: 'https://inquisitive-cocada-5bc116.netlify.app',
     },
   },
 

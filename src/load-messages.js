@@ -1,5 +1,6 @@
 const loadMessages = (lang) => {
   let loadAppI18nPromise;
+  console.log('Will load translation for language:', lang);
   switch (lang) {
     case 'de':
       loadAppI18nPromise = import(
